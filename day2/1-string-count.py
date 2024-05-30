@@ -1,0 +1,1 @@
+print(len(input().split())) # 단어 받고 개수 세기
