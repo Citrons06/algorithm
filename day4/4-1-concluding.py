@@ -15,15 +15,15 @@ for i in range(n):
 
         # ? 가 첫 단어로 올 경우
         if i == 0:
-            if n > 2:
+            if n == 1:  # ? 만 들어오는 경우
+                for candidate in A:
+                    print(candidate)
+                    break
+
+            else:
                 next_word = log_list[i + 1]
                 for candidate in A:
                     if candidate[-1] == next_word[0] and candidate not in log_list:
-                        print(candidate)
-                        break
-            else:
-                for candidate in A:
-                    if candidate not in log_list:
                         print(candidate)
 
         # ? 가 중간에 올 경우
