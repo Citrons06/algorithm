@@ -1,14 +1,20 @@
 n = int(input())
 m = int(input())
-s = str(input())
+s = input()
 
-check_p = 'I' + 'OI' * n
-
+# 투포인터
+left_idx = 0
+right_idx = 0
 cnt = 0
 
-for i in range(len(s)):
+while right_idx < m:
+    if s[right_idx: right_idx + 3] == 'IOI':
+        right_idx += 2
+        if right_idx - left_idx == 2 * n:
+            cnt += 1
+            left_idx += 2
 
-    if s[i : (2 * n) + 1 + i] == check_p:
-        cnt += 1
+    else:
+        left_idx = right_idx = right_idx + 1
 
 print(cnt)
