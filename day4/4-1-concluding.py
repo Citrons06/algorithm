@@ -1,8 +1,14 @@
 n = int(input())
-log_list = [input() for _ in range(n)]
+log_list = []
+
+for i in range(n):
+    log_list.append(input())
 
 m = int(input())
-A = [input() for _ in range(m)]
+A = []
+
+for i in range(m):
+    A.append(input())
 
 for i in range(n):
     if log_list[i] == '?':
@@ -33,3 +39,5 @@ for i in range(n):
             for candidate in A:
                 if candidate[0] == log_list[i - 1][-1] and candidate not in log_list:
                     print(candidate)
+
+### 계속 테스트 케이스에서 틀렸다고 뜨는데 반례를 모르겠음 ... ###
