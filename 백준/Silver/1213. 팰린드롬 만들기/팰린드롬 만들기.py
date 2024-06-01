@@ -26,9 +26,9 @@ else:
             ans[right + 1 - (cnt // 2) : right + 1] = char * (cnt // 2)
 
         else:
+            ans[len(s) // 2] = char
             ans[left : left + cnt // 2] = char * (cnt // 2)
             ans[right + 1 - (cnt // 2) : right + 1] = char * (cnt // 2)
-            ans[len(s) // 2] = char
         left += cnt // 2
         right -= cnt // 2
 
