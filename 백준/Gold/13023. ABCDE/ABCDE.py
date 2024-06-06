@@ -16,7 +16,7 @@ def DFS(now, depth):
     visit[now] = True
 
     for i in A[now]:
-        if not visit[i]:
+        if not visit[i]:  # 방문 여부 체크
             DFS(i, depth + 1)  # 재귀 호출마다 깊이 증가
     visit[now] = False
 
@@ -34,4 +34,3 @@ if arrive:
     print(1)
 else:
     print(0)
-
