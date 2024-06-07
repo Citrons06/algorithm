@@ -9,7 +9,6 @@ heap = []
 for _ in range(n):
     a = int(input().strip())
 
-
     if a != 0:   # a가 0이 아니면 heap에 삽입
         # (절댓값, 원래의 값) 튜플 형태로 heap에 추가
         # abs(a): 우선순위 큐에서 절댓값 기준으로 정렬하기 위한 키
