@@ -9,6 +9,5 @@ for _ in range(t):
         con_alcohol = int(con_alcohol)
         school[school_name] = con_alcohol
 
-    # 술 소비량을 기준으로 내림차순 정렬 후 마지막 학교 이름 출력
     sort_school = sorted(school, key=lambda x: x[1], reverse=True)
     print(sort_school[-1])
