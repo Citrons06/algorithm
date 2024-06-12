@@ -13,10 +13,10 @@ for _ in range(t):
         sum = mid * (1 + mid) // 2  # mid 개의 징검다리를 밟을 때 돌 개수
 
         if sum <= stone:
-            cnt = max(mid, cnt)  # mid가 기존 징검다리 개수보다 작으면 cnt 값에 업데이트
+            cnt = max(mid, cnt)  # mid가 기존 징검다리 개수보다 크면 cnt 값에 업데이트
             start = mid + 1
 
-        # mid 값이 stone 보다 크면 유효한 경우가 아님 -> 범위 줄임
+        # sum 값이 stone 보다 크면 유효한 경우가 아님 -> 범위 줄임
         else:
             end = mid - 1
 
