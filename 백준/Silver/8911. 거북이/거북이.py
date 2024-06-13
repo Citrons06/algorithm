@@ -1,3 +1,7 @@
+import sys
+
+input = sys.stdin.readline
+
 def cal_min_square(min_x, max_x, min_y, max_y):
     return (max_x - min_x) * (max_y - min_y)
 
