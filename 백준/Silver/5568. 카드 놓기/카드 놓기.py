@@ -2,7 +2,7 @@ from itertools import permutations
 
 n = int(input())
 k = int(input())
-num = [input().strip() for _ in range(n)]
+num = [input() for _ in range(n)]
 
 combined = set()
 for comb in permutations(num, k):
