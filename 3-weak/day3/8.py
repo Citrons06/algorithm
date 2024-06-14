@@ -29,8 +29,8 @@ for _ in range(m):
 
 start_city, end_city = map(int, input().split())
 
-dist_from_1 = dijkstra(1)
+# start_city에서의 최단 경로를 계산
 dist_from_start = dijkstra(start_city)
-dist_from_end = dijkstra(end_city)
 
-min_pay = 
+min_pay = dist_from_start[end_city]
+print(min_pay)
