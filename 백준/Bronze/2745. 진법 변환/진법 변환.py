@@ -1,3 +1,3 @@
-n, b = map(str, input().split())
+n, b = input().split()
 
 print(int(n, int(b)))
